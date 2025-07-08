@@ -6,7 +6,7 @@ const cors = require("cors");
 const multer = require('multer');
 const path = require('path')
 const fs = require('fs');
-
+// Use cors
 app.use(cors());
 app.use(express.json());
 app.use('/images', express.static(path.join(__dirname, 'uploads')));
